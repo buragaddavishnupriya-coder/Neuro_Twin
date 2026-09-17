@@ -20,7 +20,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-ARTIFACTS_DIR = Path(__file__).resolve().parents[2] / "artifacts" / "paper_results"
+candidate_dirs = [
+    Path(__file__).resolve().parent.parent / "artifacts" / "paper_results",
+    Path(__file__).resolve().parents[2] / "artifacts" / "paper_results",
+    Path(__file__).resolve().parent / "artifacts" / "paper_results",
+]
+ARTIFACTS_DIR = next((p for p in candidate_dirs if p.exists() and (p / "ieee_results.json").exists()), candidate_dirs[0])
 ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
 
 # Mount paper results static directory so frontend can display plots directly

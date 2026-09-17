@@ -147,8 +147,10 @@ function App() {
   const [selectedModel, setSelectedModel] = useState('XGBoost Classifier')
   const [toast, setToast] = useState('')
 
+  const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
+
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/results/summary')
+    fetch(`${API_BASE}/api/results/summary`)
       .then(res => res.ok ? res.json() : null)
       .then(resData => {
         if (resData && resData.results_by_disease) {
@@ -157,13 +159,13 @@ function App() {
       })
       .catch(() => {})
 
-    fetch('http://127.0.0.1:8000/api/results/latex')
+    fetch(`${API_BASE}/api/results/latex`)
       .then(res => res.ok ? res.text() : null)
       .then(text => {
         if (text) setLatexCode(text)
       })
       .catch(() => {})
-  }, [])
+  }, [API_BASE])
 
   const showToast = (msg) => {
     setToast(msg)

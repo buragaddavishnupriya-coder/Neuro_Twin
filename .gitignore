@@ -29,7 +29,8 @@ Thumbs.db
 *.log
 
 # Generated artifacts
-backend/artifacts/
+backend/artifacts/*
+!backend/artifacts/paper_results/
 backend/outputs/
 backend/logs/
 

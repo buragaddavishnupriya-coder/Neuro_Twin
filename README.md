@@ -117,3 +117,35 @@ Visit **http://localhost:5173** to access the interactive **IEEE Results & Resea
 ```bash
 python backend/scripts/generate_paper_results.py
 ```
+
+---
+
+## 🌐 Deployment Guide
+
+### 1. Frontend Deployment (GitHub Pages)
+
+The repository is configured with an automated GitHub Actions CI/CD workflow (`.github/workflows/deploy.yml`).
+
+1. Navigate to your repository on GitHub: **[buragaddavishnupriya-coder/Neuro_Twin](https://github.com/buragaddavishnupriya-coder/Neuro_Twin)**.
+2. Go to **Settings** > **Pages** (in the left sidebar).
+3. Under **Build and deployment** > **Source**, change the dropdown to **GitHub Actions**.
+4. Every push to the `main` branch will automatically build and deploy the React application.
+5. Your live frontend will be available at:
+   👉 **`https://buragaddavishnupriya-coder.github.io/Neuro_Twin/`**
+
+### 2. Backend Deployment (Render / Railway)
+
+The backend is pre-configured with `render.yaml` and `Procfile`.
+
+#### Deploy on Render (Recommended Free Cloud Hosting):
+1. Sign up or log in at **[render.com](https://render.com/)**.
+2. Click **New +** > **Blueprint**.
+3. Connect your GitHub repository `buragaddavishnupriya-coder/Neuro_Twin`.
+4. Render will automatically read `render.yaml`, configure Python 3.11, install dependencies from `requirements.txt`, and launch Uvicorn.
+5. *Or manual Web Service setup:*
+   - **Root Directory**: `backend`
+   - **Build Command**: `pip install -r requirements.txt`
+   - **Start Command**: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+6. Once deployed, copy your Render backend URL (e.g. `https://neurotwin-backend.onrender.com`).
+7. *(Optional)* Add the environment variable `VITE_API_BASE_URL=https://your-render-url.onrender.com` in your GitHub repository secrets if connecting live cloud inference to the frontend. Note that the frontend is also fully functional standalone with pre-computed IEEE metrics!
+

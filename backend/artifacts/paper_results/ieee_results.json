@@ -1,0 +1,233 @@
+{
+  "results_by_disease": {
+    "Parkinson's Disease": {
+      "Baseline (LogReg)": {
+        "accuracy": 0.7692307692307693,
+        "precision": 0.9545454545454546,
+        "recall": 0.7241379310344828,
+        "specificity": 0.9,
+        "f1_score": 0.8235294117647058,
+        "roc_auc": 0.9275862068965517,
+        "confusion_matrix": [
+          [
+            9,
+            1
+          ],
+          [
+            8,
+            21
+          ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.53      0.90      0.67        10\n           1       0.95      0.72      0.82        29\n\n    accuracy                           0.77        39\n   macro avg       0.74      0.81      0.75        39\nweighted avg       0.85      0.77      0.78        39\n"
+      },
+      "XGBoost Classifier": {
+        "accuracy": 0.9230769230769231,
+        "precision": 0.9333333333333333,
+        "recall": 0.9655172413793104,
+        "specificity": 0.8,
+        "f1_score": 0.9491525423728814,
+        "roc_auc": 0.9827586206896551,
+        "confusion_matrix": [
+          [
+            8,
+            2
+          ],
+          [
+            1,
+            28
+          ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.89      0.80      0.84        10\n           1       0.93      0.97      0.95        29\n\n    accuracy                           0.92        39\n   macro avg       0.91      0.88      0.90        39\nweighted avg       0.92      0.92      0.92        39\n"
+      },
+      "Proposed TabTransformer": {
+        "accuracy": 0.9487179487179487,
+        "precision": 1.0,
+        "recall": 0.9310344827586207,
+        "specificity": 1.0,
+        "f1_score": 0.9642857142857143,
+        "roc_auc": 0.9379310344827586,
+        "confusion_matrix": [
+          [
+            10,
+            0
+          ],
+          [
+            2,
+            27
+          ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n         0.0       0.83      1.00      0.91        10\n         1.0       1.00      0.93      0.96        29\n\n    accuracy                           0.95        39\n   macro avg       0.92      0.97      0.94        39\nweighted avg       0.96      0.95      0.95        39\n"
+      }
+    },
+    "Alzheimer's Disease": {
+      "Baseline (LogReg)": {
+        "accuracy": 0.8085106382978723,
+        "precision": 0.7894736842105263,
+        "recall": 0.75,
+        "f1_score": 0.7692307692307693,
+        "specificity": 0.8518518518518519,
+        "roc_auc": 0.9055555555555557,
+        "confusion_matrix": [
+          [
+            23,
+            4
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.82      0.85      0.84        27\n           1       0.79      0.75      0.77        20\n\n    accuracy                           0.81        47\n   macro avg       0.81      0.80      0.80        47\nweighted avg       0.81      0.81      0.81        47\n"
+      },
+      "XGBoost Classifier": {
+        "accuracy": 0.8297872340425532,
+        "precision": 0.8333333333333334,
+        "recall": 0.75,
+        "f1_score": 0.7894736842105263,
+        "specificity": 0.8888888888888888,
+        "roc_auc": 0.9351851851851851,
+        "confusion_matrix": [
+          [
+            24,
+            3
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.83      0.89      0.86        27\n           1       0.83      0.75      0.79        20\n\n    accuracy                           0.83        47\n   macro avg       0.83      0.82      0.82        47\nweighted avg       0.83      0.83      0.83        47\n"
+      },
+      "Proposed TabTransformer": {
+        "accuracy": 0.7872340425531915,
+        "precision": 0.6923076923076923,
+        "recall": 0.9,
+        "f1_score": 0.782608695652174,
+        "specificity": 0.7037037037037037,
+        "roc_auc": 0.9203703703703705,
+        "confusion_matrix": [
+          [
+            19,
+            8
+          ],
+          [
+            2,
+            18
+          ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.90      0.70      0.79        27\n           1       0.69      0.90      0.78        20\n\n    accuracy                           0.79        47\n   macro avg       0.80      0.80      0.79        47\nweighted avg       0.81      0.79      0.79        47\n"
+      }
+    },
+    "Brain Stroke": {
+      "Baseline (LogReg)": {
+        "accuracy": 0.738747553816047,
+        "precision": 0.13468013468013468,
+        "recall": 0.8,
+        "recall_sensitivity": 0.8,
+        "specificity": 0.73559670781893,
+        "f1_score": 0.23054755043227665,
+        "roc_auc": 0.8395473251028807,
+        "confusion_matrix": [
+          [
+            715,
+            257
+          ],
+          [
+            10,
+            40
+          ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.99      0.74      0.84       972\n           1       0.13      0.80      0.23        50\n\n    accuracy                           0.74      1022\n   macro avg       0.56      0.77      0.54      1022\nweighted avg       0.94      0.74      0.81      1022\n"
+      },
+      "XGBoost Classifier": {
+        "accuracy": 0.8317025440313112,
+        "precision": 0.16111111111111112,
+        "recall": 0.58,
+        "recall_sensitivity": 0.58,
+        "specificity": 0.8446502057613169,
+        "f1_score": 0.25217391304347825,
+        "roc_auc": 0.8205349794238683,
+        "confusion_matrix": [
+          [
+            821,
+            151
+          ],
+          [
+            21,
+            29
+          ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.98      0.84      0.91       972\n           1       0.16      0.58      0.25        50\n\n    accuracy                           0.83      1022\n   macro avg       0.57      0.71      0.58      1022\nweighted avg       0.94      0.83      0.87      1022\n"
+      },
+      "Proposed TabTransformer": {
+        "accuracy": 0.723091976516634,
+        "precision": 0.12779552715654952,
+        "recall": 0.8,
+        "recall_sensitivity": 0.8,
+        "specificity": 0.7191358024691358,
+        "f1_score": 0.22038567493112948,
+        "roc_auc": 0.8015637860082305,
+        "confusion_matrix": [
+          [
+            699,
+            273
+          ],
+          [
+            10,
+            40
+          ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.99      0.72      0.83       972\n           1       0.13      0.80      0.22        50\n\n    accuracy                           0.72      1022\n   macro avg       0.56      0.76      0.53      1022\nweighted avg       0.94      0.72      0.80      1022\n"
+      }
+    }
+  },
+  "literature_comparison": {
+    "parkinsons": {
+      "Little et al. (SVM)": 85.0,
+      "Sakar et al. (Random Forest)": 87.2,
+      "Deep MLP Baseline": 89.5,
+      "NeuroTwin (XGBoost)": 92.31,
+      "NeuroTwin (Proposed TabTransformer)": 94.87
+    },
+    "alzheimers": {
+      "Marcus et al. (OASIS Baseline)": 82.5,
+      "Battineni et al. (SVM)": 86.4,
+      "Standard Deep Neural Net": 88.9,
+      "NeuroTwin (XGBoost)": 82.98,
+      "NeuroTwin (Proposed TabTransformer)": 78.72
+    },
+    "stroke": {
+      "Shukla et al. (Decision Tree)": 84.6,
+      "Clinical RF Baseline": 88.2,
+      "Standard Deep MLP": 89.5,
+      "NeuroTwin (Proposed TabTransformer)": 72.31,
+      "NeuroTwin (XGBoost)": 83.17
+    }
+  },
+  "plots": [
+    "actual_vs_predicted_alzheimers_disease_tabtransformer.png",
+    "actual_vs_predicted_brain_stroke_xgboost.png",
+    "actual_vs_predicted_parkinsons_disease_xgboost.png",
+    "confusion_matrix_alzheimers_disease_baseline.png",
+    "confusion_matrix_alzheimers_disease_tabtransformer.png",
+    "confusion_matrix_alzheimers_disease_xgboost.png",
+    "confusion_matrix_brain_stroke_baseline.png",
+    "confusion_matrix_brain_stroke_tabtransformer.png",
+    "confusion_matrix_brain_stroke_xgboost.png",
+    "confusion_matrix_parkinsons_disease_baseline.png",
+    "confusion_matrix_parkinsons_disease_tabtransformer.png",
+    "confusion_matrix_parkinsons_disease_xgboost.png",
+    "literature_comparison_alzheimers_disease.png",
+    "literature_comparison_brain_stroke.png",
+    "literature_comparison_parkinsons_disease.png",
+    "precision_recall_curves_alzheimers_disease.png",
+    "precision_recall_curves_brain_stroke.png",
+    "precision_recall_curves_parkinsons_disease.png",
+    "roc_curves_alzheimers_disease.png",
+    "roc_curves_brain_stroke.png",
+    "roc_curves_parkinsons_disease.png",
+    "training_val_curves_alzheimers_disease.png",
+    "training_val_curves_brain_stroke.png",
+    "training_val_curves_parkinsons_disease.png"
+  ]
+}
