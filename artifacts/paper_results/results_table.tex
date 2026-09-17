@@ -1,0 +1,19 @@
+\begin{table*}[htbp]
+\caption{Comparative Performance of NeuroTwin Models on Clinical Neurological Benchmarks}
+\label{tab:neurotwin_results}
+\centering
+\small
+\begin{tabular}{llcccccc}
+\hline
+\textbf{Disease Domain} & \textbf{Model Architecture} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Sensitivity} & \textbf{Specificity} & \textbf{F1-Score} & \textbf{ROC-AUC} \\
+\hline
+Parkinson's Disease & Baseline (LogReg) & 76.92\% & 95.45\% & 72.41\% & 90.00\% & 82.35\% & 0.9276 \\
+ & XGBoost Classifier & 92.31\% & 93.33\% & 96.55\% & 80.00\% & 94.92\% & 0.9828 \\
+ & \textbf{Proposed TabTransformer} & \textbf{87.18\%} & \textbf{90.00\%} & \textbf{93.10\%} & \textbf{70.00\%} & \textbf{91.53\%} & \textbf{0.9448} \\
+\hline
+Alzheimer's Disease & Baseline (LogReg) & 80.85\% & 78.95\% & 75.00\% & 85.19\% & 76.92\% & 0.9056 \\
+ & XGBoost Classifier & 82.98\% & 83.33\% & 75.00\% & 88.89\% & 78.95\% & 0.9352 \\
+ & \textbf{Proposed TabTransformer} & \textbf{80.85\%} & \textbf{82.35\%} & \textbf{70.00\%} & \textbf{88.89\%} & \textbf{75.68\%} & \textbf{0.9074} \\
+\hline
+\end{tabular}
+\end{table*}

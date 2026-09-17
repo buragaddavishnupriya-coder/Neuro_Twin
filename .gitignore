@@ -1,0 +1,65 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated artifacts
+backend/artifacts/
+backend/outputs/
+backend/logs/
+
+# Raw datasets
+backend/datasets/raw/*
+!backend/datasets/raw/clinical/
+!backend/datasets/raw/clinical/**
+backend/datasets/external/
+
+
+# Processed datasets
+backend/datasets/processed/
+
+
+# Large model files
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.joblib
+*.pkl
+*.h5
+*.hdf5
+*.safetensors
+
+# Temporary files
+*.tmp
+*.temp
+
+# Frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
+frontend/build/
