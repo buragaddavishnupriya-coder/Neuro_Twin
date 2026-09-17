@@ -22,9 +22,13 @@ The complete checklist of experimental deliverables required for IEEE conference
 | | **Proposed TabTransformer** | 87.18% | 90.00% | 93.10% | 70.00% | 91.53% | 0.9448 |
 | **Alzheimer's Disease** | Baseline (Logistic Regression) | 80.85% | 78.95% | 75.00% | 85.19% | 76.92% | 0.9056 |
 | | XGBoost Classifier | **82.98%** | 83.33% | **75.00%** | **88.89%** | **78.95%** | **0.9352** |
-| | **Proposed TabTransformer** | 80.85% | 82.35% | 70.00% | **88.89%** | 75.68% | 0.9074 |
+| | **Proposed TabTransformer** | 78.72% | 69.23% | **90.00%** | 70.37% | 78.26% | 0.9204 |
+| **Brain Stroke** | Baseline (Logistic Regression) | 73.87% | 13.47% | 80.00% | 73.56% | 23.05% | 0.8395 |
+| | XGBoost Classifier | **83.17%** | **16.11%** | 58.00% | **84.47%** | **25.22%** | **0.8205** |
+| | **Proposed TabTransformer** | 72.31% | 12.78% | **80.00%** | 71.91% | 22.04% | 0.8016 |
 
 ---
+
 
 ## 📈 Generated IEEE Publication Figures (300 DPI)
 
